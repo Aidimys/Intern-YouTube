@@ -2,7 +2,7 @@
 .LeftPart {
   display: flex;
   justify-content: space-between;
-  width: 220px;
+  width: 15%;
   align-items: center;
 }
 .burger {

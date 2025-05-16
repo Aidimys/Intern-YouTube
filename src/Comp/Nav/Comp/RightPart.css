@@ -1,0 +1,29 @@
+.RightPart {
+  display: flex;
+  justify-content: space-evenly;
+  width: 15%;
+}
+.userImg {
+  width: 35px;
+  border-radius: 50%;
+}
+.RghtBtn {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  color: rgb(175, 173, 173);
+  margin: 0 15px;
+  padding: 10px;
+}
+.RghtBtn:hover {
+  background-color: rgb(238, 238, 238);
+}
+.UserMenuBtn {
+  border: none;
+  border-radius: 50%;
+  color: rgb(175, 173, 173);
+  background-color: transparent;
+}
