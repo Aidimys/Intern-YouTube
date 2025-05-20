@@ -13,7 +13,7 @@ import {
   FaEmpire,
 } from "react-icons/fa";
 import "./LeftMenu.css";
-import userImg from "./images/emptyUser.png";
+import userImg from "../../images/emptyUser.png";
 const LeftMenu = () => {
   return (
     <div className='LeftMenu'>

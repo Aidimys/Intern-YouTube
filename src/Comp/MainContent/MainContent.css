@@ -1,0 +1,59 @@
+.MainContent {
+  padding-top: 80px;
+  margin-left: 10px;
+}
+.ContentList {
+  list-style: none;
+  display: flex;
+  overflow-x: auto;
+}
+.ContentList > li {
+  display: inline-block;
+}
+
+.SectionInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 90%;
+  margin-left: 10px;
+}
+.SectionText {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+}
+.AuthorImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.CtrlBtns {
+  margin-right: 80px;
+}
+.arrow {
+  margin-right: 10px;
+  border-radius: 50%;
+  border: 0;
+  color: white;
+  background-color: grey;
+  width: 30px;
+  height: 30px;
+  padding-top: 4px;
+  padding-left: 7px;
+}
+.SubscribeBtn {
+  color: white;
+  background-color: red;
+  border-radius: 20px;
+  font-size: 13px;
+  border: none;
+  padding: 10px 15px;
+  margin-right: 25px;
+}
+.RecommendedText {
+  font-size: 14px;
+  margin-left: 50px;
+  color: rgb(176, 176, 176);
+}

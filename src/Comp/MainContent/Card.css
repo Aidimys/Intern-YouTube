@@ -1,0 +1,32 @@
+.preview {
+  width: 200px;
+  height: 130px;
+  border-radius: 15px;
+}
+.bigPreview {
+  width: 400px;
+  height: 200px;
+  border-radius: 15px;
+}
+.vidName {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+.shortInf {
+  width: 120px;
+  display: flex;
+  justify-content: space-between;
+}
+.vidInfo {
+  color: rgb(184, 181, 181);
+  font-size: 10px;
+}
+.infBlock {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Card {
+  margin-right: 30px;
+}

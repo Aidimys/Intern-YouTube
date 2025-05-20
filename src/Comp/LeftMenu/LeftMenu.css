@@ -1,7 +1,7 @@
 .LeftMenu {
   width: 11em;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
   padding-top: 70px;
   position: relative;
@@ -29,6 +29,7 @@
 }
 .LeftMenu > h2 {
   margin: 5px 0;
+  text-align: center;
 }
 .LeftMenu > ul > li > a > img {
   width: 30px;

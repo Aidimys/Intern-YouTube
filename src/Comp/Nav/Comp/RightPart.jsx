@@ -1,5 +1,5 @@
 import { FaTh, FaBell, FaVideo } from "react-icons/fa";
-import emptyUser from "./images/emptyUser.png";
+import emptyUser from "../../../images/emptyUser.png";
 import "./RightPart.css";
 const RightPart = () => {
   return (

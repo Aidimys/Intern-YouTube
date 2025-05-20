@@ -1,5 +1,5 @@
 import { FaBars } from "react-icons/fa";
-import logo from "./images/logo.png";
+import logo from "../../../images/logo.png";
 import "./LeftPart.css";
 <link rel='preconnect' href='https://fonts.googleapis.com'></link>;
 const LeftPart = () => {
