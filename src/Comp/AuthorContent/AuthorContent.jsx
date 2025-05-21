@@ -30,22 +30,34 @@ const AuthorContent = () => {
           <nav>
             <ul className='Catigories'>
               <li id='active'>
-                <h4>Home</h4>
+                <a href='/AuthorHome' id='active'>
+                  <h4>Home</h4>
+                </a>
               </li>
               <li>
-                <h4>Videos</h4>
+                <a href='/videos'>
+                  <h4>Videos</h4>
+                </a>
               </li>
               <li>
-                <h4>Playlists</h4>
+                <a href='/playlists'>
+                  <h4>Playlists</h4>
+                </a>
               </li>
               <li>
-                <h4>Channels</h4>
+                <a href='/playlists'>
+                  <h4>Channels</h4>
+                </a>
               </li>
               <li>
-                <h4>Discussion</h4>
+                <a href='/playlists'>
+                  <h4>Discussion</h4>
+                </a>
               </li>
               <li>
-                <h4>About</h4>
+                <a href='/playlists'>
+                  <h4>About</h4>
+                </a>
               </li>
               <li>
                 <FaSearch />
@@ -80,16 +92,22 @@ const AuthorContent = () => {
           <p>Recommended channels</p>
           <ul className='RecChanList'>
             <li>
-              <img src={author} alt='author' className='AuthorImg2' />
-              <h4>Youtuber1</h4>
+              <a href='youtuber'>
+                <img src={author} alt='author' className='AuthorImg2' />
+                <h4>Youtuber1</h4>
+              </a>
             </li>
             <li>
-              <img src={author} alt='author' className='AuthorImg2' />
-              <h4>Youtuber1</h4>
+              <a href='youtuber'>
+                <img src={author} alt='author' className='AuthorImg2' />
+                <h4>Youtuber1</h4>
+              </a>
             </li>
             <li>
-              <img src={author} alt='author' className='AuthorImg2' />
-              <h4>Youtuber1</h4>
+              <a href='youtuber'>
+                <img src={author} alt='author' className='AuthorImg2' />
+                <h4>Youtuber1</h4>
+              </a>
             </li>
           </ul>
         </div>

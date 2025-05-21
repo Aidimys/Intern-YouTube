@@ -67,6 +67,10 @@
   margin-right: 40px;
   font-size: 15px;
 }
+.Catigories > li > a {
+  text-decoration: none;
+  color: black;
+}
 #active {
   color: red;
   text-decoration: underline 2px;
@@ -113,12 +117,14 @@
   list-style: none;
   padding: 0;
 }
-.RecChanList > li {
+.RecChanList > li > a {
   display: flex;
   align-items: center;
   margin-bottom: 15px;
+  text-decoration: none;
+  color: black;
 }
-.RecChanList > li > h4 {
+.RecChanList > li > a > h4 {
   margin-left: 10px;
 }
 .SectionChoose {
