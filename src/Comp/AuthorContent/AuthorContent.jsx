@@ -1,0 +1,123 @@
+import "./AuthorContent.css";
+import author from "../../images/emptyUser.png";
+import backImg from "../../images/back.jpg";
+import videoData from "../../Data/videos";
+import Card from "../MainContent/Card";
+import bigImg from "../../images/Previews/image1.jpg";
+import { FaBell, FaAngleLeft, FaAngleRight, FaSearch } from "react-icons/fa";
+const AuthorContent = () => {
+  const thirdSectionVideos = videoData.slice(9, 15);
+  return (
+    <div className='AuthorContent'>
+      <img src={backImg} alt='back' className='backImg' />
+      <section className='AuthorSection'>
+        <div className='AutInfPose'>
+          <img src={author} alt='author' className='AuthorImg2' />
+          <div className='TxtPose'>
+            <h2 className='AuthorName'>Food & Drink</h2>
+            <p className='Followers'>245k subscribers</p>
+          </div>
+        </div>
+        <div className='SubBtns'>
+          <button className='RghtBtn'>
+            <FaBell />
+          </button>
+          <button className='SubscribeBtn'>Subscribe 245k</button>
+        </div>
+      </section>
+      <section className='MainSection'>
+        <div className='SectionChoose'>
+          <nav>
+            <ul className='Catigories'>
+              <li id='active'>
+                <h4>Home</h4>
+              </li>
+              <li>
+                <h4>Videos</h4>
+              </li>
+              <li>
+                <h4>Playlists</h4>
+              </li>
+              <li>
+                <h4>Channels</h4>
+              </li>
+              <li>
+                <h4>Discussion</h4>
+              </li>
+              <li>
+                <h4>About</h4>
+              </li>
+              <li>
+                <FaSearch />
+              </li>
+            </ul>
+            <div>
+              <div className='VideoDiv'>
+                <div className='imgDiv'>
+                  <img src={bigImg} alt='preview' className='bigImg' />
+                  <div className='timeIcon'>7:36</div>
+                </div>
+                <div className='DescriptionDiv'>
+                  <h3>Some text of video name</h3>
+                  <p className='Description'>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book.
+                  </p>
+                  <div className='shortInf2'>
+                    <p className='vidInfo2'>11k views</p>
+                    <p className='vidInfo2'>·</p>
+                    <p className='vidInfo2'>6 month ago</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div className='RecChan'>
+          <p>Recommended channels</p>
+          <ul className='RecChanList'>
+            <li>
+              <img src={author} alt='author' className='AuthorImg2' />
+              <h4>Youtuber1</h4>
+            </li>
+            <li>
+              <img src={author} alt='author' className='AuthorImg2' />
+              <h4>Youtuber1</h4>
+            </li>
+            <li>
+              <img src={author} alt='author' className='AuthorImg2' />
+              <h4>Youtuber1</h4>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <div className='SectionInfo'>
+          <h3>Food & Drink videos</h3>
+          <div className='CtrlBtns'>
+            <button className='arrow'>
+              <FaAngleLeft />
+            </button>
+            <button className='arrow'>
+              <FaAngleRight />
+            </button>
+          </div>
+        </div>
+
+        <ul className='AuthorList'>
+          {thirdSectionVideos.map((video) => {
+            return (
+              <li>
+                <Card key={video.id} {...video} />
+              </li>
+            );
+          })}
+        </ul>
+      </section>
+    </div>
+  );
+};
+export default AuthorContent;

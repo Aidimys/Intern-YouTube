@@ -8,7 +8,7 @@ const LeftPart = () => {
       <button className='burger'>
         <FaBars />
       </button>
-      <a href='#main' className='Logo'>
+      <a href='/' className='Logo'>
         <img src={logo} alt='logo' className='logoImg' />
         <p>
           <b>YouTube</b>

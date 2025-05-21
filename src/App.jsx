@@ -1,14 +1,17 @@
 import "./App.css";
-import LeftMenu from "./Comp/LeftMenu/LeftMenu";
-import MainContent from "./Comp/MainContent/MainContent";
-import Nav from "./Comp/Nav/Nav";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import MainPage from "./Pages/MainPage";
+import AuthorPage from "./Pages/AuthorPage";
 function App() {
   return (
-    <div className='App'>
-      <Nav />
-      <LeftMenu />
-      <MainContent />
-    </div>
+    <BrowserRouter>
+      <div className='App'>
+        <Routes>
+          <Route path='/' element={<MainPage />} />
+          <Route path='AuthorPage' element={<AuthorPage />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 

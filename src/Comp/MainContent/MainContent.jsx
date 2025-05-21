@@ -12,9 +12,11 @@ const MainContent = (video, key) => {
     <div className='MainContent'>
       <section>
         <div className='SectionInfo'>
-          <div className='SectionText'>
-            <img src={author} alt='author' className='AuthorImg' />
-            <h2>Dollie Blair</h2>
+          <div>
+            <a href='/AuthorPage' className='SectionText'>
+              <img src={author} alt='author' className='AuthorImg' />
+              <h2>Dollie Blair</h2>
+            </a>
           </div>
           <div className='CtrlBtns'>
             <button className='arrow'>
@@ -62,10 +64,12 @@ const MainContent = (video, key) => {
       </section>
       <section>
         <div className='SectionInfo'>
-          <div className='SectionText'>
-            <img src={author} alt='author' className='AuthorImg' />
-            <h2>Food & Drink</h2>
-            <p className='RecommendedText'>Recommended channel for you</p>
+          <div>
+            <a href='/AuthorPage' className='SectionText'>
+              <img src={author} alt='author' className='AuthorImg' />
+              <h2>Food & Drink</h2>
+              <p className='RecommendedText'>Recommended channel for you</p>
+            </a>
           </div>
 
           <div className='CtrlBtns'>

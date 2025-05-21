@@ -22,6 +22,7 @@ const videoData = [
     preview: image1,
     name: "Video1",
     isBig: false,
+    duration: "17.36",
   },
   {
     id: 2,
@@ -31,6 +32,7 @@ const videoData = [
     preview: image2,
     name: "Video2",
     isBig: false,
+    duration: "15.45",
   },
   {
     id: 3,
@@ -40,6 +42,7 @@ const videoData = [
     preview: image3,
     name: "Video3",
     isBig: false,
+    duration: "25.40",
   },
   {
     id: 4,
@@ -49,6 +52,7 @@ const videoData = [
     preview: image4,
     name: "Video4",
     isBig: false,
+    duration: "45.0",
   },
   {
     id: 5,
@@ -58,6 +62,7 @@ const videoData = [
     preview: image5,
     name: "Video5",
     isBig: false,
+    duration: "7.36",
   },
   {
     id: 6,
@@ -66,6 +71,7 @@ const videoData = [
     date: "5 months ago",
     preview: image6,
     name: "Video6",
+    duration: "10.15",
   },
   {
     id: 7,
@@ -75,6 +81,7 @@ const videoData = [
     preview: image7,
     name: "Video7",
     isBig: true,
+    duration: "59.20",
   },
   {
     id: 8,
@@ -84,6 +91,7 @@ const videoData = [
     preview: image8,
     name: "Video8",
     isBig: true,
+    duration: "32.0",
   },
   {
     id: 9,
@@ -93,6 +101,7 @@ const videoData = [
     preview: image9,
     name: "Video9",
     isBig: true,
+    duration: "54.0",
   },
   {
     id: 10,
@@ -102,6 +111,7 @@ const videoData = [
     preview: image10,
     name: "Video10",
     isBig: false,
+    duration: "133.45",
   },
   {
     id: 11,
@@ -111,6 +121,7 @@ const videoData = [
     preview: image11,
     name: "Video11",
     isBig: false,
+    duration: "10.00.00",
   },
   {
     id: 12,
@@ -120,6 +131,7 @@ const videoData = [
     preview: image12,
     name: "Video12",
     isBig: false,
+    duration: "47.56",
   },
   {
     id: 13,
@@ -129,6 +141,7 @@ const videoData = [
     preview: image13,
     name: "Video13",
     isBig: false,
+    duration: "30.0",
   },
   {
     id: 14,
@@ -138,6 +151,7 @@ const videoData = [
     preview: image14,
     name: "Video14",
     isBig: false,
+    duration: "47.06",
   },
   {
     id: 15,
@@ -147,6 +161,7 @@ const videoData = [
     preview: image15,
     name: "Video15",
     isBig: false,
+    duration: "7.36",
   },
 ];
 
