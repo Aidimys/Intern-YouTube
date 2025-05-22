@@ -4,13 +4,13 @@ import "./RightPart.css";
 const RightPart = () => {
   return (
     <div className='RightPart'>
-      <button className='RghtBtn'>
+      <button className='RightBtn'>
         <FaVideo />
       </button>
-      <button className='RghtBtn'>
+      <button className='RightBtn'>
         <FaTh />
       </button>
-      <button className='RghtBtn'>
+      <button className='RightBtn'>
         <FaBell />
       </button>
       <button className='UserMenuBtn'>

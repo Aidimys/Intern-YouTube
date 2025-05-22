@@ -30,3 +30,21 @@
 .Card {
   margin-right: 30px;
 }
+.VideoLink {
+  text-decoration: none;
+  color: black;
+}
+.imgDiv {
+  position: relative;
+}
+
+.timeIcon {
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+  background-color: rgba(130, 128, 128, 0.5);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 12px;
+}

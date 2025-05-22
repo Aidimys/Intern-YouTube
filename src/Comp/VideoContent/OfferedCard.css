@@ -1,0 +1,24 @@
+.OfferedPreview {
+  width: 300px;
+  height: 180px;
+  border-radius: 15px;
+}
+.timeIcon2 {
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+  background-color: rgba(130, 128, 128, 0.5);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+.shortInf2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.vidInfo2 {
+  color: rgb(184, 181, 181);
+  font-size: 12px;
+}

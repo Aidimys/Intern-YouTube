@@ -7,7 +7,7 @@
   width: 35px;
   border-radius: 50%;
 }
-.RghtBtn {
+.RightBtn {
   font-size: 20px;
   display: flex;
   align-items: center;
@@ -18,7 +18,7 @@
   margin: 0 15px;
   padding: 10px;
 }
-.RghtBtn:hover {
+.RightBtn:hover {
   background-color: rgb(238, 238, 238);
 }
 .UserMenuBtn {
@@ -26,4 +26,5 @@
   border-radius: 50%;
   color: rgb(175, 173, 173);
   background-color: transparent;
+  margin-left: 10px;
 }
