@@ -1,4 +1,4 @@
-import { FaTh, FaBell, FaVideo } from "react-icons/fa";
+import { FaTh, FaBell, FaVideo, FaGripVertical } from "react-icons/fa";
 import emptyUser from "../../../images/emptyUser.png";
 import "./RightPart.css";
 const RightPart = () => {
@@ -15,6 +15,9 @@ const RightPart = () => {
       </button>
       <button className='UserMenuBtn'>
         <img src={emptyUser} alt='user' className='userImg' />
+        <p className='OpenBtn'>
+          <FaGripVertical />
+        </p>
       </button>
     </div>
   );

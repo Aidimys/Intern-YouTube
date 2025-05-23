@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-evenly;
   width: 15%;
+  padding-right: 30px;
 }
 .userImg {
   width: 35px;
@@ -28,6 +29,16 @@
   background-color: transparent;
   margin-left: 10px;
 }
+.OpenBtn {
+  display: none;
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+  margin-left: 10px;
+  color: black;
+  font-size: 20px;
+  align-items: center;
+}
 @media screen and (max-width: 430px) {
   .RightBtn {
     display: none;
@@ -36,5 +47,23 @@
   .userImg {
     width: 50px;
     border-radius: 50%;
+  }
+}
+@media screen and (max-width: 430px) {
+  body.channel-page .userImg {
+    display: none;
+  }
+
+  body.channel-page .OpenBtn {
+    display: flex;
+  }
+}
+@media screen and (max-width: 430px) {
+  body.video-page .userImg {
+    display: none;
+  }
+
+  body.video-page .OpenBtn {
+    display: flex;
   }
 }

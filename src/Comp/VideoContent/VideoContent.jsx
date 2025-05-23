@@ -3,13 +3,24 @@ import videoData from "../../Data/videos";
 import OfferedCard from "./OfferedCard";
 import author from "../../images/emptyUser.png";
 import { FaShare, FaThumbsUp, FaThumbsDown } from "react-icons/fa";
-import PLayingVid from "../../images/Previews/image14.jpg";
+import PlayingVid from "../../images/Previews/image14.jpg";
+import { useEffect, useState } from "react";
+
 const VideoContent = (video, key) => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 430);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 430);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   const firstSectionVideos = videoData.slice(0, 6);
   return (
     <div className='VideoContent'>
       <div className='PlayerAndInf'>
-        <img alt='vid' src={PLayingVid} className='Player' />
+        <img alt='vid' src={PlayingVid} className='Player' />
         <section className='VideoInteract'>
           <h1>Dude you get a telescope</h1>
           <div>
@@ -32,25 +43,39 @@ const VideoContent = (video, key) => {
         </section>
         <hr />
         <section className='VideoDesription'>
-          <div>
+          <div className='MobileDescMain'>
             <img src={author} alt='author' className='AuthorImg2' />
             <div className='DescrDiv'>
               <h2 className='AuthorName'>Food & Drink</h2>
-              <p className='Followers'>Published 3 weeks ago</p>
-              <p className='Description'>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. Lorem
-                Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s.
-              </p>
-              <p className='Followers'>Show more</p>
+
+              {isMobile ? (
+                <p className='MobileSubCount'>245k Subscribed</p>
+              ) : (
+                <>
+                  <p className='Followers'>Published 3 weeks ago</p>
+                  <p className='Description'>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum is simply dummy text of
+                    the printing and typesetting industry. Lorem Ipsum is simply
+                    dummy text of the printing and typesetting industry. Lorem
+                    Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum is simply dummy text of the printing
+                    and typesetting industry. Lorem Ipsum is simply dummy text
+                    of the printing and typesetting industry
+                  </p>
+                  <p className='Followers'>Show more</p>
+                </>
+              )}
             </div>
           </div>
-          <button className='SubscribeBtn'>Subscribe 245k</button>
+
+          {isMobile ? (
+            <span className='SubscribeMobile'>Subscribe</span>
+          ) : (
+            <button className='SubscribeBtn'>Subscribe 245k</button>
+          )}
         </section>
+        {isMobile && <hr className='MobileHR' />}
       </div>
       <div className='Offered'>
         <div className='NextControl'>
