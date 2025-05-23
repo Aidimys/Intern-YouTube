@@ -5,6 +5,7 @@ import videoData from "../../Data/videos";
 import Card from "../MainContent/Card";
 import bigImg from "../../images/Previews/image1.jpg";
 import { FaBell, FaAngleLeft, FaAngleRight, FaSearch } from "react-icons/fa";
+import { FaBurn, FaFolder, FaHome, FaBuffer } from "react-icons/fa";
 const AuthorContent = () => {
   const thirdSectionVideos = videoData.slice(9, 15);
   return (
@@ -19,7 +20,7 @@ const AuthorContent = () => {
           </div>
         </div>
         <div className='SubBtns'>
-          <button className='RghtBtn'>
+          <button className='RightBtn'>
             <FaBell />
           </button>
           <button className='SubscribeBtn'>Subscribe 245k</button>
@@ -61,6 +62,11 @@ const AuthorContent = () => {
               </li>
               <li>
                 <FaSearch />
+              </li>
+              <li>
+                <button className='dropdown-toggle'>
+                  <h4>▼</h4>
+                </button>
               </li>
             </ul>
             <div>
@@ -135,6 +141,24 @@ const AuthorContent = () => {
           })}
         </ul>
       </section>
+      <div className='BottomMenu'>
+        <a href='#home'>
+          <FaHome />
+          Home
+        </a>
+        <a href='#trending'>
+          <FaBurn />
+          Trending
+        </a>
+        <a href='#subscriptions'>
+          <FaBuffer />
+          Subs
+        </a>
+        <a href='#library'>
+          <FaFolder />
+          Library
+        </a>
+      </div>
     </div>
   );
 };

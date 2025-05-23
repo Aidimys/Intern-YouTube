@@ -3,6 +3,7 @@ import Card from "./Card";
 import "./MainContent.css";
 import videoData from "../../Data/videos";
 import author from "../../images/emptyUser.png";
+import { FaBurn, FaFolder, FaHome, FaBuffer } from "react-icons/fa";
 
 const MainContent = (video, key) => {
   const firstSectionVideos = videoData.slice(0, 6);
@@ -93,6 +94,24 @@ const MainContent = (video, key) => {
           })}
         </ul>
       </section>
+      <div className='BottomMenu'>
+        <a href='#home'>
+          <FaHome />
+          Home
+        </a>
+        <a href='#trending'>
+          <FaBurn />
+          Trending
+        </a>
+        <a href='#subscriptions'>
+          <FaBuffer />
+          Subs
+        </a>
+        <a href='#library'>
+          <FaFolder />
+          Library
+        </a>
+      </div>
     </div>
   );
 };

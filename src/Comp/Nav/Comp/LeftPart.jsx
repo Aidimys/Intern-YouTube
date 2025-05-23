@@ -11,7 +11,8 @@ const LeftPart = () => {
       <a href='/' className='Logo'>
         <img src={logo} alt='logo' className='logoImg' />
         <p>
-          <b>YouTube</b>
+          <b className='logo-default'>YouTube</b>
+          <b className='logo-channel'>Food & Drink</b>
         </p>
       </a>
     </div>

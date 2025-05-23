@@ -130,3 +130,101 @@
 .SectionChoose {
   width: 90%;
 }
+.Catigories > li:last-child > button {
+  border: none;
+  background-color: transparent;
+}
+.Catigories > li:last-child {
+  display: none;
+}
+@media screen and (max-width: 430px) {
+  .AuthorContent {
+    padding: 55px 0 0 0;
+    width: 100%;
+    margin-left: 0;
+  }
+  .AutInfPose {
+    display: block;
+  }
+  .backImg {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 0;
+  }
+
+  .AuthorSection {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%;
+    padding-left: 10px;
+    margin-top: -30px;
+  }
+
+  .SubBtns {
+    margin-top: 10px;
+  }
+
+  .MainSection {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .AuthorList {
+    flex-direction: column;
+    width: 90%;
+    justify-content: center;
+    margin-left: 20px;
+  }
+
+  .bigImg {
+    width: 100%;
+    height: auto;
+  }
+
+  .DescriptionDiv {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .Catigories {
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 14px;
+    padding-left: 20px;
+    justify-content: center;
+  }
+
+  .SectionInfo {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .TxtPose h2 {
+    font-size: 16px;
+  }
+
+  .Followers {
+    font-size: 11px;
+  }
+  .VideoDiv {
+    display: none;
+  }
+
+  .RecChan {
+    display: none;
+  }
+
+  .Catigories > li:nth-child(n + 4):not(:last-child) {
+    display: none;
+  }
+
+  .Catigories > li:last-child {
+    display: inline-block;
+  }
+  .SectionChoose {
+    width: 100%;
+    overflow-x: auto;
+  }
+}
