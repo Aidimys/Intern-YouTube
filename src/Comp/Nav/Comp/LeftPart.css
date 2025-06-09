@@ -1,8 +1,8 @@
 .LeftPart {
   display: flex;
   justify-content: space-between;
-  width: 15%;
   align-items: center;
+  flex-shrink: 0;
 }
 .burger {
   display: flex;
@@ -21,7 +21,7 @@
   text-decoration: none;
   color: black;
   font-size: 22px;
-  font-family: "Oswald", sans-serif;
+  font-family: 'Oswald', sans-serif;
   display: flex;
   justify-content: left;
   width: 150px;

@@ -27,9 +27,6 @@
   align-items: center;
   justify-content: space-between;
 }
-.Card {
-  margin-right: 30px;
-}
 .VideoLink {
   text-decoration: none;
   color: black;

@@ -1,8 +1,5 @@
 .RightPart {
   display: flex;
-  justify-content: space-evenly;
-  width: 15%;
-  padding-right: 30px;
 }
 .userImg {
   width: 35px;

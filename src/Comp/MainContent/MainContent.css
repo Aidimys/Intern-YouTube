@@ -1,14 +1,18 @@
 .MainContent {
-  padding-top: 80px;
   margin-left: 10px;
+  width: 100%;
+  padding: 0 40px 0 40px;
 }
+
 .ContentList {
-  list-style: none;
   display: flex;
-  overflow-x: hidden;
+  gap: 30px;
+  padding: 0;
+  overflow-x: auto;
 }
+
 .ContentList > li {
-  display: inline-block;
+  list-style: none;
 }
 
 .SectionInfo {
@@ -16,12 +20,10 @@
   justify-content: space-between;
   align-items: center;
   max-width: 90%;
-  margin-left: 10px;
 }
 .SectionText {
   display: flex;
   align-items: center;
-  margin-left: 30px;
   color: black;
   text-decoration: none;
 }

@@ -16,7 +16,7 @@ import "./LeftMenu.css";
 import userImg from "../../images/emptyUser.png";
 const LeftMenu = () => {
   return (
-    <div className='LeftMenu'>
+    <aside className='LeftMenu'>
       <ul>
         <li>
           <a href='#1' id='Active'>
@@ -130,7 +130,7 @@ const LeftMenu = () => {
         <FaEmpire className='LeftMenuIcon' />
         Settings
       </a>
-    </div>
+    </aside>
   );
 };
 

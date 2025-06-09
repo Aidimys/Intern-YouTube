@@ -1,15 +1,18 @@
 .CentPart {
-  width: 60%;
   display: flex;
   justify-content: space-between;
-  margin: 10px 0;
   height: 40px;
-  margin-left: 75px;
+  flex: 1;
+  justify-content: center;
 }
 .CentPart form {
-  width: 90%;
+  max-width: 600px;
+  width: 100%;
   border-radius: 15px;
   display: flex;
+}
+.CentPart input {
+  width: 100%;
 }
 .SearchInp {
   width: 75%;
