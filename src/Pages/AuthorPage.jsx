@@ -1,7 +1,8 @@
 import AuthorContent from "../Comp/AuthorContent/AuthorContent";
-import LeftMenu from "../Comp/LeftMenu/LeftMenu";
-import Nav from "../Comp/Nav/Nav";
+
+import Header from "../Comp/Header/Header";
 import { useEffect } from "react";
+import Aside from "../Comp/AsideMenu/Aside";
 
 const AuthorPage = () => {
   useEffect(() => {
@@ -11,8 +12,8 @@ const AuthorPage = () => {
 
   return (
     <>
-      <Nav />
-      <LeftMenu />
+      <Header />
+      <Aside />
       <AuthorContent />
     </>
   );

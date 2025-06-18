@@ -1,12 +1,12 @@
-import LeftMenu from "../Comp/LeftMenu/LeftMenu";
+import Aside from "../Comp/AsideMenu/Aside";
 import MainContent from "../Comp/MainContent/MainContent";
-import Nav from "../Comp/Nav/Nav";
+import Header from "../Comp/Header/Header";
 
 const MainPage = () => {
   return (
     <>
-      <Nav />
-      <LeftMenu />
+      <Header />
+      <Aside />
       <MainContent />
     </>
   );

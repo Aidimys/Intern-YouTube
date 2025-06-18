@@ -12,9 +12,9 @@ import {
   FaGamepad,
   FaEmpire,
 } from "react-icons/fa";
-import "./LeftMenu.css";
+import "./Aside.css";
 import userImg from "../../images/emptyUser.png";
-const LeftMenu = () => {
+const Aside = () => {
   return (
     <aside className='LeftMenu'>
       <ul>
@@ -134,4 +134,4 @@ const LeftMenu = () => {
   );
 };
 
-export default LeftMenu;
+export default Aside;

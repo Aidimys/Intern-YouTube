@@ -1,4 +1,4 @@
-import Nav from "../Comp/Nav/Nav";
+import Header from "../Comp/Header/Header";
 import VideoContent from "../Comp/VideoContent/VideoContent";
 import { useEffect } from "react";
 
@@ -9,7 +9,7 @@ const VideoPage = () => {
   }, []);
   return (
     <>
-      <Nav />
+      <Header />
       <VideoContent />
     </>
   );
