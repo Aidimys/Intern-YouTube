@@ -1,8 +1,9 @@
 .RightPart {
   display: flex;
+  padding-right: 45px;
 }
 .userImg {
-  width: 35px;
+  width: 40px;
   border-radius: 50%;
 }
 .RightBtn {
@@ -13,7 +14,7 @@
   border: none;
   border-radius: 50%;
   color: rgb(175, 173, 173);
-  margin: 0 15px;
+  margin: 0 18px;
   padding: 10px;
 }
 .RightBtn:hover {

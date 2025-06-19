@@ -4,20 +4,24 @@
   justify-content: flex-start;
   flex-direction: column;
   position: relative;
+  height: 91vh;
 }
 .LeftMenu > ul {
   list-style: none;
   padding-left: 30px;
+  margin-bottom: 10px;
+  margin-top: 0;
+  padding-top: 18px;
 }
 .LeftMenu > ul > li > a {
   text-decoration: none;
   color: rgb(198, 197, 197);
-  font-size: 20px;
+  font-size: 17px;
   display: flex;
   align-items: center;
-  margin-bottom: 7px;
+  margin-bottom: 18px;
   border-radius: 20px;
-  padding: 5px;
+  padding: 5px 5px 5px 0;
 }
 #Active {
   color: red;
@@ -26,20 +30,24 @@
   background-color: rgb(234, 233, 233);
 }
 .LeftMenu > h2 {
-  margin: 5px 0;
+  margin: 10px 0;
   text-align: center;
+  font-size: 20px;
 }
 .LeftMenu > ul > li > a > img {
   width: 30px;
   border-radius: 50%;
   margin-right: 5px;
 }
+.LeftMenu > #subs-list > li > a {
+  margin-bottom: 10px;
+}
 .LeftMenuIcon {
   margin-right: 5px;
 }
 .SettingsBtn {
   position: absolute;
-  bottom: 0px;
+  bottom: 0;
   text-decoration: none;
   color: rgb(198, 197, 197);
   font-size: 22px;

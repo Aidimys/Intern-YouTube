@@ -88,7 +88,7 @@ const Aside = () => {
         </li>
       </ul>
       <h2>Subsciptions</h2>
-      <ul>
+      <ul id='subs-list'>
         <li>
           <a href='#1'>
             <img src={userImg} alt='userPhoto' />
