@@ -36,7 +36,8 @@
     display: none;
   }
   .Logo {
-    margin-left: 25px;
+    margin-left: 0;
+    line-height: 5px;
   }
 }
 .logo-channel {

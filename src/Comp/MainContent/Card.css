@@ -9,9 +9,10 @@
   border-radius: 15px;
 }
 .vidName {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bold;
   margin: 0;
+  margin-top: 8px;
 }
 .shortInf {
   width: 130px;
@@ -55,15 +56,13 @@
   .preview,
   .bigPreview {
     width: 100%;
-    height: auto;
-    max-height: 200px;
+    height: 150px;
     object-fit: cover;
   }
 
   .vidName {
     font-size: 16px;
-    font-weight: bold;
-    margin: 10px 0 6px 0;
+    margin-bottom: 6px;
   }
 
   .infBlock {

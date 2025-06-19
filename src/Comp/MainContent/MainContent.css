@@ -45,6 +45,7 @@
 .CtrlBtns {
   align-self: flex-end;
   padding-bottom: 10px;
+  padding-right: 5px;
 }
 .arrow {
   margin-right: 10px;
@@ -115,6 +116,7 @@
     justify-content: center;
     width: 100%;
     margin-left: 0;
+    padding-left: 0;
   }
   .SectionInfo {
     display: none;
@@ -125,7 +127,7 @@
     flex-direction: column;
     overflow-x: hidden;
     padding: 0;
-    gap: 20px; /* Отступ между карточками */
+    gap: 33px; /* Отступ между карточками */
     width: 100%;
   }
 

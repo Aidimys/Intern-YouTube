@@ -41,9 +41,11 @@
   .RightBtn {
     display: none;
   }
-
+  .RightPart {
+    padding-right: 0;
+  }
   .userImg {
-    width: 50px;
+    width: 30px;
     border-radius: 50%;
   }
 }
