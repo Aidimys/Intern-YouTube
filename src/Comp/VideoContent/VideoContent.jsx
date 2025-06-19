@@ -5,6 +5,7 @@ import author from "../../images/emptyUser.png";
 import { FaShare, FaThumbsUp, FaThumbsDown } from "react-icons/fa";
 import PlayingVid from "../../images/Previews/image14.jpg";
 import { useEffect, useState } from "react";
+import { FaBurn, FaFolder, FaHome, FaBuffer } from "react-icons/fa";
 
 const VideoContent = (video, key) => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 430);
@@ -24,7 +25,7 @@ const VideoContent = (video, key) => {
         <section className='VideoInteract'>
           <h1>Dude you get a telescope</h1>
           <div>
-            <p className='vidInfo2'>123k views</p>
+            <p className='MainVidInfo'>123k views</p>
             <div className='InteractionBtns'>
               <button className='InteractBtn'>
                 <FaThumbsUp /> <p>245k</p>
@@ -44,7 +45,7 @@ const VideoContent = (video, key) => {
         <hr />
         <section className='VideoDesription'>
           <div className='MobileDescMain'>
-            <img src={author} alt='author' className='AuthorImg2' />
+            <img src={author} alt='author' className='AuthorImg3' />
             <div className='DescrDiv'>
               <h2 className='AuthorName'>Food & Drink</h2>
 
@@ -72,7 +73,7 @@ const VideoContent = (video, key) => {
           {isMobile ? (
             <span className='SubscribeMobile'>Subscribe</span>
           ) : (
-            <button className='SubscribeBtn'>Subscribe 245k</button>
+            <button className='SubscribeBtn2'>Subscribe 245k</button>
           )}
         </section>
         {isMobile && <hr className='MobileHR' />}
@@ -98,6 +99,24 @@ const VideoContent = (video, key) => {
             );
           })}
         </ul>
+      </div>
+      <div className='BottomMenu'>
+        <a href='#home'>
+          <FaHome />
+          Home
+        </a>
+        <a href='#trending'>
+          <FaBurn />
+          Trending
+        </a>
+        <a href='#subscriptions'>
+          <FaBuffer />
+          Subs
+        </a>
+        <a href='#library'>
+          <FaFolder />
+          Library
+        </a>
       </div>
     </div>
   );
